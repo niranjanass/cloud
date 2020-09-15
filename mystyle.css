@@ -1,0 +1,85 @@
+p{
+ text-align: center;  
+    color: blue;
+    font-size: 20px; 
+    color :blue; 
+} 
+h1,h2,p {  
+    text-align: center;  
+    color: blue;
+     font-weight: bold;  
+}   
+
+#lect {  
+    text-align: center;  
+    color: blue; 
+    font-size: 30px; 
+}  
+.hello
+{
+text-align: left;  
+    color: red; 
+}
+* {  
+   color: green;  
+   font-size: 20px;  
+}  
+
+body 
+{
+    
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+div {
+  border: 1px solid black;
+  margin: 25px 50px 75px;
+  background-color: lightblue;
+  position :absolute;
+}
+.pure{
+  text-shadow: 2px 2px red;
+}
+.read{
+  width: 400px;
+  height: 400px;
+  background-image: url("carrer.jpg");
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}

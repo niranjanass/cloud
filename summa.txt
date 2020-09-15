@@ -1,0 +1,12 @@
+ActivityCompat.requestPermissions(this,new String[]
+{
+Manifest.permission.WRITE_EXTERNAL_STORAGE),PackageManager.PERMISSION_GRANTED);
+createPDF();
+}
+
+private void createPDF()
+{
+createButton.setOnClicklistener{(view)->{
+PdfDocument mypdfDocument = new PdfDocument();
+Paint mypaint = new Paint();
+PdfDocument.PageInfo mypageinfo = new PdfDocument.PageInfo.Builder(

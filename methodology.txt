@@ -1,0 +1,25 @@
+METHODOLOGY
+
+
+The application involves  building a smart phone application to collect data,analyze and report it to the individuals.An android app is used for collecting data from individuals as well as from medical organisations.
+The app provides a facility for users to login and enter the necessary details.A separate login module is provided for individuals and hospital management respectively.Essential medical reports must be attached while submitting the patient's details.
+The data entered by the user is stored in firebase,realtime database in which data is hosted on the cloud and synchronized in realtime to every connected client.
+The data stored in firebase is then sent to Thingspeak channel,which is used used to visualise and analyse live data streams in the cloud.Based on analysis,medical reports can be generated and sent to municipality authorities.
+
+
+COMPONENTS AND EQUIPMENTS
+
+ANDROID STUDIO
+Android Studio is the official integrated development environment (IDE) designed specifically for Android development.
+
+FIREBASE
+The Firebase Realtime Database is a cloud-hosted database.It uses data synchronization—every time data changes, any connected device receives that update within milliseconds.
+
+
+THINGSPEAK
+ThingSpeak is an IoT analytics platform service that allows us to aggregate, visualize, and analyze live data streams in the cloud.
+
+
+
+NOVELTY
+The medical alert system

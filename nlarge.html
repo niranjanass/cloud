@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<script>
+	
+	function sumpros()
+	{
+		//var sum = 0,pro = 1;
+		var m = Number(document.getElementById("n").value );
+		m=parseInt(m);
+		var arr = new Array();
+		window.prompt("enter");
+		for(var i=0;i<m;i++)
+		{
+			arr.push(parseInt(window.prompt("enter the value")));
+
+		}
+		arr.sort(function(m,arr){ return m - arr});
+		document.writeln("the array is"+ arr);
+		c = parseInt(window.prompt("enter the value of n"));
+		document.writeln("the"+c+ "largest element is"+arr[m-c]);
+
+		
+	}
+</script>
+</head>
+<body>
+	<form>
+		enter the size of array:<input id = "n">
+		<button onclick="sumpros()">click</button>
+		<input id = "ans">
+	</form>
+
+	</body>
+	</html>

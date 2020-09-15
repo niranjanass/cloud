@@ -1,0 +1,17 @@
+PdfDocument document = new PdfDocument();
+
+Paint myPaint = new Paint();
+PdfDocument.PageInfo myPageInfo1 = new PdfDocument.pageInfo.Builder(400,600,1).create();
+PdfDocument.Page myPage1 = myPdfDocument.startPage(myPageInfo1);
+Canvas canvas = myPage1.getCanvas();
+canvas.drawText("hello",40,50,myPaint);
+myPdfDocument.finishPage(myPage1);
+
+File file = new File(Environment.getExternalStorageDirectory(),"/hello.pdf");
+try
+{
+myPdfDocument.writeTo(new FileOutputStream(file));
+}catch(IOException e){
+e.printStackTrace();
+}
+myPdfDocument.close();

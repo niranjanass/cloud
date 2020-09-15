@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<h1><center> <i>membership registration</i></center></h1>
+	<style type="text/css">
+		body{
+			background-image: url(water.jpg);
+			background-repeat: no-repeat;
+			background-position: all;
+			background-size: 2000px 2000px;
+		}
+		input
+		{
+			text-align: center;
+			font-size :20px;
+		}
+	</style>
+<script type="text/javascript">
+	
+	function validate(){
+		var fname=document.getElementById('fname');
+		var emailid=document.getElementById('email');
+		var pwd=document.getElementById('pwd');
+		var phone=document.getElementById('pno');
+	
+if(inalpha(fname,"*name is mandatory,only alphabets*")){
+	if(eval(emailid,"*please enter valid email id*")){
+		if(passval(pwd,"*please enter password in  the given format*")){
+			if(phval(phone,"*enter corrret number*")){
+				return true;
+			}
+		}
+	}
+}
+return false;
+}
+function inalpha(inp,msg){
+	var name=/^[a-zA-Z]{3,30}$/;
+	if(inp.value.match(name)){
+		return true;
+	}
+	else{ 
+		window.alert(msg);
+		inp.focus();
+		return false;
+	}
+}
+function eval(inp,msg){
+	var eid=/^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,3}$/;
+	if(inp.value.match(eid)){
+		return true;
+	}
+	else{
+		window.alert(msg);
+		inp.focus();
+		return false;
+	}
+}
+function passval(inp,msg){
+	var password=/^[a-zA-Z0-9$#]{7,8}$/;
+	if(inp.value.match(password)){
+		return true;
+	}
+	else{
+		window.alert(msg);
+		inp.focus();
+		return false;
+	}
+}
+function phval(inp,msg){
+	var phn=/^\d{10}$/;
+	if(inp.value.match(phn)){
+		return true;
+	}
+	else{
+		window.alert(msg);
+		inp.focus();
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+	<center>
+	<form method="post" name="forms" onsubmit="return validate()">
+		<center>
+		NAME:
+		<input type="text" id="fname" name='fname' required><br>
+		<br>
+		EMAIL:
+		<input type="text" id="email" name="email" required><br>
+		<br>
+		PASSWORD:
+		<input type="password" id="pwd" name="pwd" required><br>
+		<br>
+		CONFIRM/PASSWORD :
+		<input type = "password" id ="cpd" name="cpd" required><br>
+		MOBILE:
+		<input type="number" id="pno" name="pno" ><br>
+		<br>
+		GENDER :<br>
+		male<input type ="radio" name="gender" value ="gender" checked><br>
+		female<input type ="radio" name = "gender" value ="gender"><br>
+
+		ADDRESS:
+		<textarea></textarea><br><br>
+		YOUR INTERESTED PAINTINGS:<br>
+		<select name="category" required="select your favo">
+			<option value="engineering">engineering</option>
+			<OPTION value="commerce">commerce</OPTION>
+			<option value="banking">banking</option>
+		</select><br>
+		<br>
+	</center>
+		<input type="submit" name="submit">
+	</form>
+</center>
+</body>
+</html>

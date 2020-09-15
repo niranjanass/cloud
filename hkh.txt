@@ -1,0 +1,4 @@
+hackerrank hints 
+to find possible combination between different range of numbers 
+use for loops 
+i and j 

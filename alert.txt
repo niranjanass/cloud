@@ -1,0 +1,36 @@
+The PPT submited should contain
+(a) only six slides
+(b) (i) Problem Statement,
+   (ii) Team Name,
+  (iii) Name and E-Mail ID of the Team Leader,
+   (iv) the Names of the Team Members;
+   in the first slide.
+(c) followed by methodology, block diagram, novelty, components and equipment, references.  
+
+
+
+
+HEALTH ALERTS APPLICATION FOR A REGION
+Viral and mosquito borne diseases rise seasonally and regionally. Hygiene is one of the
+reasons why some regions in India have higher disease rate compared to others. It would
+be great if an application could collect data, analyze and report to authorities. Here is a
+problem statement for one such application.
+PROBLEM STATEMENT: Create a smart phone application that can be used by
+individuals as well as various medical clinic authorities in each region to report viral and
+mosquito borne cases registered per day. The application interface can be as simple as
+type of viral infection reported or optionally collect all the symptoms reported. Location
+data can be obtained from smart phone and the data can then be sent to MATLAB
+ThingSpeak channel. Using MATLAB, we can analyze the data reported and create
+reports that can be sent to regional municipal authorities for necessary actions or posted to
+the same app where users can view health alerts for their area.
+
+With the increase in health problem,more and more people are affected by some kind of disease while they are unaware of it.
+Viral and mosquito borne diseases rise seasonally and regionally. Hygiene is one of the
+reasons why some regions in India have higher disease rate compared to others.
+//
+
+The main objectives are to //create a application to collect ,analyze data and report it to authorities
+1.Collect data from individuals as well as from hospitals.
+2.Check the authenticity of data submitted by various individula and hospitals.
+3.Analye the data collected.
+4.Create medical reports that can be sent to municipal authorities.

@@ -1,0 +1,28 @@
+.we{
+  transition: all 1s ease-in-out;
+}
+
+.re{
+  transition-property: top, left;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+}
+
+.ne{
+  transition-property: top, left, border-radius, background-color;
+  transition-duration: 2s, 1s, 0.5s, 0.5s;
+  transition-delay: 0s, 0.5s, 1s, 1.5s;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-image: url("water.jpg");
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
